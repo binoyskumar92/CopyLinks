@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -148,14 +148,20 @@ fieldset {
 <body>
 <div class="container">  
   <form id="contact" action="" method="post">
-    <h3>Input the Link</h3>
-    <h4>Paste your link in the box to copy to clipboard of your phone</h4>
+    <h3>Welcome to Copy Link App</h3>
+    <h4>App helps to copy data from Browser to Phone and Phone to browser</h4>
     <fieldset>
-      <input placeholder="Link" type="text" tabindex="1"  name="UserInput" required autofocus>
+      <label>Paste your text in the box to copy to clipboard of your phone</label><br>
+      <input placeholder="Input text" type="text" tabindex="1"  name="UserInput" autofocus>
+    </fieldset>
+
+    <fieldset>
+      <label>Text from your phone</label><br>
+      <input placeholder="No data" type="text" value="" tabindex="1"  name="PhoneInput" readonly autofocus>
     </fieldset>
     
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Post/Push</button>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Post/Get</button>
     </fieldset>
     <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">JackFrost</a></p>
   </form>

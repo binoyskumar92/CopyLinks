@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.Formatter;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +27,10 @@ public class MainActivity extends AppCompatActivity {
     private WebServer server;
     private Context context;
     private String htmlResponse;
+    private String phoneText;
     private TextView urlView;
+    private EditText phoneEditText;
+    private ClipboardManager clipboard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +41,12 @@ public class MainActivity extends AppCompatActivity {
         context = getApplicationContext();
         server = new WebServer();
         htmlResponse = "";
+        phoneText="";
+        clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+        urlView = (TextView) this.findViewById(R.id.urlview);
+        phoneEditText = (EditText) this.findViewById(R.id.phoneText);
         setUrlView();
+
         try {
             server.start();
         } catch (IOException ioe) {
@@ -50,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
     private void setUrlView() {
         WifiManager wm = (WifiManager) context.getSystemService(WIFI_SERVICE);
         String ip = Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress());
-        urlView=(TextView)this.findViewById(R.id.urlview);
-        urlView.setText("http://"+ip+":8086");
+        ip = "http://" + ip + ":8086";
+        urlView.setText(ip);
     }
 
     @Override
@@ -100,10 +109,11 @@ public class MainActivity extends AppCompatActivity {
                     new Handler(Looper.getMainLooper()).post(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(context, inputText, Toast.LENGTH_SHORT).show();
-                            ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-                            ClipData clip = ClipData.newPlainText("inputText", inputText);
-                            clipboard.setPrimaryClip(clip);
+                            if(!inputText.equals("")) {
+                                Toast.makeText(context, inputText, Toast.LENGTH_SHORT).show();
+                                ClipData clip = ClipData.newPlainText("inputText", inputText);
+                                clipboard.setPrimaryClip(clip);
+                            }
                         }
                     });
 
@@ -116,7 +126,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
+            //set phone text to html response
+            setPhoneTextToResponse();
             return newFixedLengthResponse(htmlResponse);
+        }
+
+        private void setPhoneTextToResponse() {
+            htmlResponse=htmlResponse.replaceFirst("value=\""+phoneText+"\"", "value=\"" + phoneEditText.getText().toString() + "\"");
+            phoneText = phoneEditText.getText().toString();
         }
     }
 
