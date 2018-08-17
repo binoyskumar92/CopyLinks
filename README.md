@@ -7,4 +7,9 @@ Following is comon scenario for all of us.
 
 The first solution that comes to mind is WhatsappforWeb for many if you are a whatsapp user. if you are a chrome user then bookmarks is a good way to go or even a facebook messenger might suffice. All these have their pros n cons. The CopylinkApp solution is a very straghtforward solution to this problem. For this main thing i have taken into consideration is simplicity. The description below outlines how to use the app.
 
+1. Clone the repo and build it using Android studio to create the apk.
+2. Install the app(do make sure if installing from unknown sources is enabled if apk is directly installed or shared)
+3. Make sure your phone and PC/laptop is connected to same wifi network.
+4. Open the app in your android phone.
+![Alt text](https://drive.google.com/open?id=1fXCrECvktujOHVbIy2WOuQMwyNJe2VmR)
 
