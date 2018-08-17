@@ -11,5 +11,4 @@ The first solution that comes to mind is WhatsappforWeb for many if you are a wh
 2. Install the app(do make sure if installing from unknown sources is enabled if apk is directly installed or shared)
 3. Make sure your phone and PC/laptop is connected to same wifi network.
 4. Open the app in your android phone.
-![](https://user-images.githubusercontent.com/32806163/44255696-c7551b80-a1bb-11e8-9158-d0d3956174a6.png){:height="400px" width="225px"}
-
+<img src="https://user-images.githubusercontent.com/32806163/44255696-c7551b80-a1bb-11e8-9158-d0d3956174a6.png" width="48">
