@@ -18,9 +18,8 @@ The first solution that comes to mind is WhatsappforWeb for many if you are a wh
 <img src="https://user-images.githubusercontent.com/32806163/44255700-c7edb200-a1bb-11e8-99a0-0a749f8d3817.png" width="1400">
 6. Type in text that needs to sent to your mobile in the first input box.
 <img src="https://user-images.githubusercontent.com/32806163/44256674-b5c14300-a1be-11e8-85b1-ed8d879991fb.png" width="1400">
-7. Now click on Send/Receive button to send this text to your phone.
-8. Now check your phone to see that the text just sent got copied to your phone clipboard. 
+7. Now click on Send/Receive button to send this text to your phone. Now check your phone to see that the text just sent got copied to your phone clipboard. 
 <img src="https://user-images.githubusercontent.com/32806163/44255699-c7edb200-a1bb-11e8-9907-9eac23a445a3.png" width="450">
 <img src="https://user-images.githubusercontent.com/32806163/44255698-c7551b80-a1bb-11e8-9665-a2c346c4e2bb.png" width="450">
-9. You can use _paste_ to get this data anywhere in your phone.
+8. You can use _paste_ to get this data anywhere in your phone.
 
