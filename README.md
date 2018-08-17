@@ -13,4 +13,4 @@ The first solution that comes to mind is WhatsappforWeb for many if you are a wh
 4. Open the app in your android phone to get the below view.
 <img src="https://user-images.githubusercontent.com/32806163/44255696-c7551b80-a1bb-11e8-9158-d0d3956174a6.png" width="450">
 5. Type in and navigate to the url(say _192.168.1.5:8086_ here) displayed in your phone screen to the browser of your PC/laptop to get the following view
-<img src="https://user-images.githubusercontent.com/32806163/44255700-c7edb200-a1bb-11e8-99a0-0a749f8d3817.png" width="900">
+<img src="https://user-images.githubusercontent.com/32806163/44255700-c7edb200-a1bb-11e8-99a0-0a749f8d3817.png" width="1400">
