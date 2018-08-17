@@ -10,7 +10,7 @@ The first solution that comes to mind is WhatsappforWeb for many if you are a wh
 1. Clone the repo and build it using Android studio to create the apk.
 2. Install the app(do make sure if installing from unknown sources is enabled if apk is directly installed or shared)
 
-## Sending data from PC/browser to phone
+## Sending data from PC/browser to Phone
 3. Make sure your phone and PC/laptop is connected to same wifi network.
 4. Open the app in your android phone to get the below view.
 <img src="https://user-images.githubusercontent.com/32806163/44255696-c7551b80-a1bb-11e8-9158-d0d3956174a6.png" width="450">
@@ -22,4 +22,8 @@ The first solution that comes to mind is WhatsappforWeb for many if you are a wh
 <img src="https://user-images.githubusercontent.com/32806163/44255699-c7edb200-a1bb-11e8-9907-9eac23a445a3.png" width="450">
 <img src="https://user-images.githubusercontent.com/32806163/44255698-c7551b80-a1bb-11e8-9665-a2c346c4e2bb.png" width="450">
 8. You can use `paste` to get this data anywhere in your phone.
+
+## Sending data from Phone to PC/browser
+
+9. 
 
